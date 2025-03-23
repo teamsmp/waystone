@@ -1,0 +1,57 @@
+---
+import { tHead } from "@/lib/tp";
+import Layout from "../layouts/Layout.astro";
+import { cn } from "@/lib/utils";
+---
+
+<Layout title="Home • Team SMP">
+  <div class="flex flex-row text-xl gap-4 mb-2">
+    <a
+      href="https://discord.gg/sGGqR2wDyg"
+      target="_blank"
+      class="underline hover:text-emerald-500">discord</a
+    >
+    <a
+      href="https://youtube.com/@teamsmp-server"
+      target="_blank"
+      class="underline hover:text-emerald-500">youtube</a
+    >
+    <a
+      href="https://github.com/teamsmp"
+      target="_blank"
+      class="underline hover:text-emerald-500">github</a
+    >
+  </div>
+
+  <p class="text-xl font-light mb-1 lg:w-2/3">
+    The Team SMP is a survival Minecraft server run by XxDreamXxXx and
+    JunglTemple.
+  </p>
+
+  <h2 class={cn(tHead())}>Economy</h2>
+  <p class="mb-1 lg:w-2/3">
+    <b>Trade with Other Players Using Cubits.</b>
+    Cubits are the official currency of the Team SMP, allowing players to buy, sell,
+    and trade items within the server. Earn Cubits through various activities, like
+    mining or completing tasks, and use them to purchase resources, trade with others,
+    or contribute to your town's growth. Whether you're a skilled builder or a savvy
+    trader, Cubits are key to thriving in our dynamic economy.
+  </p>
+
+  <h2 class={cn(tHead())}>Teams</h2>
+  <p class="mb-1 lg:w-2/3">
+    <b>Join a Team and Build Together.</b>
+    Form or join a team on the Team SMP to collaborate with others, share resources,
+    and tackle challenges together. Teams allow players to work on massive builds,
+    defend their towns, and compete in server-wide events. Whether you're focused
+    on construction, exploration, or PvP, teaming up gives you a greater chance to
+    succeed and make your mark on the server.
+  </p>
+
+  <h2 class={cn(tHead())}>Minigames</h2>
+  <p class="mb-1 lg:w-2/3">
+    <b>For when you don't want to play Survival.</b> Although it's not the main focus,
+    there are minigames like TNTRun and BedWars available on the Team SMP. When Survival
+    is restarting, or you're just bored, check Minigames out.
+  </p>
+</Layout>

@@ -1,0 +1,39 @@
+---
+import { TopbarMobileSheet } from "./TopbarMobileSheet";
+import { cn } from "@/lib/utils";
+
+function defLink(name: string, href: string) {
+  return { name: name, href: href };
+}
+
+const currentUrl = Astro.url.pathname;
+const links = [defLink("join", "/join"), defLink("about", "/about")];
+---
+
+<div
+  class="overflow-hidden text-emerald-400 font-bold text-2xl text-nowrap mb-1"
+>
+  <TopbarMobileSheet links={links} client:load />
+  <span class="md:hidden pointer-events-none">/</span>
+  <span class="hidden md:inline pointer-events-none">{"/".repeat(6)}</span>
+  <a href="/" class="bg-emerald-400 hover:bg-emerald-500 text-zinc-800 px-1"
+    >Team SMP</a
+  >
+  <div class="hidden md:inline-flex gap-4">
+    {
+      links.map((link) => (
+        <a
+          class={cn(
+            currentUrl == link.href ?
+              "no-underline text-black bg-white px-1"
+            : "underline text-emerald-400 hover:text-emerald-600"
+          )}
+          href={link.href}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </div>
+  <span class="pointer-events-none">{"/".repeat(250)}</span>
+</div>

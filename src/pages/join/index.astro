@@ -1,0 +1,49 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { tHead } from "@/lib/tp";
+import { cn } from "@/lib/utils";
+---
+
+<Layout title="Join • Team SMP">
+  <p class="text-xl font-light mb-1 lg:w-2/3">
+    Join the Team SMP using these simple instructions!
+  </p>
+
+  <h1 class={cn(tHead())}>Java Edition</h1>
+  <p class="mb-1 lg:w-2/3">
+    On Java Edition, enter the multiplayer and click 'add server'. Next, paste
+    in the server IP:
+  </p>
+  <div class="bg-zinc-700 w-fit py-2 px-4 ms-2 text-lg mb-1 select-all">
+    mc.teamsmp.uk
+  </div>
+  <p class="mb-1 lg:w-2/3">
+    The name of the server is optional, but you can type in something like 'Team
+    SMP' to make it easier to find among other servers. Click 'done' and you can
+    join the server by double-clicking on it in the menu.
+  </p>
+
+  <h1 class={cn(tHead())}>Bedrock Edition (Mobile/PC)</h1>
+  <p class="mb-1 lg:w-2/3">
+    In order to join the Team SMP on Bedrock Edition, press 'play' and go to the
+    'servers' tab. On the left, scroll down until you see a button that says
+    'add server'. Click this button and paste the Bedrock IP into the 'server
+    address' box:
+  </p>
+  <div class="bg-zinc-700 w-fit py-2 px-4 ms-2 text-lg mb-1 select-all">
+    be.teamsmp.uk
+  </div>
+  <p class="mb-1 lg:w-2/3">
+    Leave the port as default (19132) and press 'save'. Next, simply click on
+    the server on the list and press 'join server'. That should be it.
+  </p>
+
+  <h1 class={cn(tHead())}>Bedrock Edition (Console)</h1>
+  <p class="mb-1 lg:w-2/3">
+    On Bedrock for consoles, you are not able to add custom servers, so you must
+    use a different method. Go to your friends menu <b
+      >in Minecraft, not your console's built-in one</b
+    >, and add JunglTemple as a friend. When joining the friend, you should be
+    taken to the Team SMP.
+  </p>
+</Layout>
