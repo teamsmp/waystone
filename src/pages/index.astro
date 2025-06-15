@@ -5,31 +5,37 @@ import { cn } from "@/lib/utils";
 ---
 
 <Layout title="Home • Team SMP">
-  <div class="flex flex-row text-xl gap-4 mb-2">
-    <a
-      href="https://discord.gg/sGGqR2wDyg"
-      target="_blank"
-      class="underline hover:text-emerald-500">discord</a
-    >
-    <a
-      href="https://youtube.com/@teamsmp-server"
-      target="_blank"
-      class="underline hover:text-emerald-500">youtube</a
-    >
-    <a
-      href="https://github.com/teamsmp"
-      target="_blank"
-      class="underline hover:text-emerald-500">github</a
-    >
+  <div class="flex flex-row justify-center w-full md:block">
+    <div class="flex flex-col md:flex-row text-xl md:gap-4 mb-2 font-mono">
+      <a
+        href="https://discord.gg/sGGqR2wDyg"
+        target="_blank"
+        class="underline hover:text-emerald-500">discord</a
+      >
+      <a
+        href="https://youtube.com/@teamsmp-server"
+        target="_blank"
+        class="underline hover:text-emerald-500">youtube</a
+      >
+      <a
+        href="https://github.com/teamsmp"
+        target="_blank"
+        class="underline hover:text-emerald-500">github</a
+      >
+    </div>
   </div>
 
-  <p class="text-xl font-light mb-1 lg:w-2/3">
+  <p class="font-mono font-black tracking-widest">
+    UNITE, SURVIVE, THRIVE!
+  </p>
+
+  <p class="text-xl font-light mb-4 lg:w-2/3">
     The Team SMP is a survival Minecraft server run by XxDreamXxXx and
     JunglTemple.
   </p>
 
   <h2 class={cn(tHead())}>Economy</h2>
-  <p class="mb-1 lg:w-2/3">
+  <p class="mb-2 lg:w-2/3">
     <b>Trade with Other Players Using Cubits.</b>
     Cubits are the official currency of the Team SMP, allowing players to buy, sell,
     and trade items within the server. Earn Cubits through various activities, like
@@ -39,7 +45,7 @@ import { cn } from "@/lib/utils";
   </p>
 
   <h2 class={cn(tHead())}>Teams</h2>
-  <p class="mb-1 lg:w-2/3">
+  <p class="mb-2 lg:w-2/3">
     <b>Join a Team and Build Together.</b>
     Form or join a team on the Team SMP to collaborate with others, share resources,
     and tackle challenges together. Teams allow players to work on massive builds,
@@ -49,7 +55,7 @@ import { cn } from "@/lib/utils";
   </p>
 
   <h2 class={cn(tHead())}>Minigames</h2>
-  <p class="mb-1 lg:w-2/3">
+  <p class="mb-2 lg:w-2/3">
     <b>For when you don't want to play Survival.</b> Although it's not the main focus,
     there are minigames like TNTRun and BedWars available on the Team SMP. When Survival
     is restarting, or you're just bored, check Minigames out.

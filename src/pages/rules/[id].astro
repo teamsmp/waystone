@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getEntry, render } from "astro:content";
+const { id } = Astro.params;
+if (id === undefined) {
+  return Astro.redirect("/404");
+}
+const post = await getEntry("rules", id);
+if (post === undefined) {
+  return Astro.redirect("/404");
+}
+const { Content } = await render(post);
+---
+
+<Layout title={`${post.data.title} - Rules &bull; Team SMP`}>
+  <div class="border-s-8 ps-4 border-s-zinc-700">
+    {post.data.summary}
+  </div>
+  <article class="substyles mt-4">
+    <Content />
+  </article>
+</Layout>
