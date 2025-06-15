@@ -1,9 +1,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -21,7 +18,7 @@ export function TopbarMobileSheet({ links }: TopbarMobileSheetProps) {
     <Sheet>
       <SheetTrigger className="md:hidden underline">menu</SheetTrigger>
       <SheetContent>
-        <div className="flex flex-col p-8 text-2xl">
+        <div className="flex flex-col p-8 text-2xl font-mono">
           <a className="underline hover:text-emerald-400" key="home" href="/">
             home
           </a>
