@@ -1,11 +1,15 @@
 @import "@fontsource-variable/fira-code";
+@import "@fontsource-variable/inter";
 @import "tailwindcss";
 @import "tw-animate-css";
+
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "Fira Code Variable", "Fira Code", monospace;
+  --font-mono: "Fira Code Variable", "Fira Code", monospace;
+  --font-sans: "Inter Variable", "Inter", sans-serif;
 }
 
 :root {
@@ -121,5 +125,23 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .substyles h1 {
+    @apply text-4xl font-bold;
+  }
+  .substyles h2 {
+    @apply text-3xl font-semibold;
+  }
+  .substyles h3 {
+    @apply text-2xl font-medium;
+  }
+  .substyles p {
+    @apply mb-2 lg:w-2/3
+  }
+  .substyles hr {
+    @apply border-zinc-500 my-3
   }
 }

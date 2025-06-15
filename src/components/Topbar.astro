@@ -7,11 +7,15 @@ function defLink(name: string, href: string) {
 }
 
 const currentUrl = Astro.url.pathname;
-const links = [defLink("join", "/join"), defLink("about", "/about")];
+const links = [
+  defLink("join", "/join"),
+  defLink("about", "/about"),
+  defLink("rules", "/rules"),
+];
 ---
 
 <div
-  class="overflow-hidden text-emerald-400 font-bold text-2xl text-nowrap mb-1"
+  class="font-mono overflow-hidden text-emerald-400 font-bold text-2xl text-nowrap mb-1"
 >
   <TopbarMobileSheet links={links} client:load />
   <span class="md:hidden pointer-events-none">/</span>

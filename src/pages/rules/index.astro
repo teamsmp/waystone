@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { tHead } from "@/lib/tp";
+import { cn } from "@/lib/utils";
+import { getCollection } from "astro:content";
+
+const allRules = await getCollection("rules");
+---
+
+<Layout title="Rules • Team SMP">
+  <p class="text-xl font-light mb-2 lg:w-2/3">
+    All different sets of rules are listed here.
+  </p>
+  <div class="flex flex-col gap-2">
+    {
+      allRules.map((set) => (
+        <div class="flex flex-col border-s-8 ps-4 border-s-zinc-700">
+          <a
+            class="font-bold underline text-2xl hover:text-emerald-300"
+            href={`/rules/${set.id}`}
+          >
+            {set.data.title}
+          </a>
+          <span class="text-zinc-300">Edition {set.data.edition}</span>
+        </div>
+      ))
+    }
+  </div>
+</Layout>
