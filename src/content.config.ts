@@ -7,7 +7,7 @@ const rules = defineCollection({
     title: z.string(),
     slug: z.string(),
     edition: z.string(),
-    summary: z.string()
+    summary: z.string(),
   }),
 });
 

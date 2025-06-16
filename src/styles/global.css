@@ -139,9 +139,9 @@
     @apply text-2xl font-medium;
   }
   .substyles p {
-    @apply mb-2 lg:w-2/3
+    @apply mb-2 lg:w-2/3;
   }
   .substyles hr {
-    @apply border-zinc-500 my-3
+    @apply border-zinc-500 my-3;
   }
 }

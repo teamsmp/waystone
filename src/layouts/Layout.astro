@@ -24,17 +24,20 @@ const { title } = Astro.props;
           </div>
         </div>
       </div>
-      <footer class="p-6 border-t border-t-zinc-600 text-zinc-300 flex flex-row justify-between">
+      <footer
+        class="p-6 border-t border-t-zinc-600 text-zinc-300 flex flex-row justify-between"
+      >
         <span>
-        &copy; Team SMP {new Date().getFullYear().toString()}<br />This site is <a
-          class="underline hover:text-emerald-300"
-          href="https://github.com/teamsmp/waystone"
-          target="_blank">available on GitHub</a
-        > and licensed under the <a
-          class="underline hover:text-emerald-300"
-          href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"
-          target="_blank">GNU General Public License v3.0</a
-        >
+          &copy; Team SMP {new Date().getFullYear().toString()}<br />This site
+          is <a
+            class="underline hover:text-emerald-300"
+            href="https://github.com/teamsmp/waystone"
+            target="_blank">available on GitHub</a
+          > and licensed under the <a
+            class="underline hover:text-emerald-300"
+            href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"
+            target="_blank">GNU General Public License v3.0</a
+          >
         </span>
         <span class="text-zinc-500">
           waystone {process.env.WAYSTONE_INSTANCE || "dev"}
