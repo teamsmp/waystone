@@ -5,9 +5,18 @@
 
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: 'QuinqueFive';
+  src: url('/fonts/QuinqueFive.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --font-five: "QuinqueFive", monospace;
   --font-mono: "Fira Code Variable", "Fira Code", monospace;
   --font-sans: "Inter Variable", "Inter", sans-serif;
 }
