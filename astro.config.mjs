@@ -5,6 +5,8 @@ import react from "@astrojs/react";
 import icon from "astro-icon";
 import node from "@astrojs/node";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.teamsmp.uk",
@@ -14,7 +16,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [react(), icon()],
+  integrations: [react(), icon(), sitemap()],
 
   adapter: node({
     mode: "standalone",
