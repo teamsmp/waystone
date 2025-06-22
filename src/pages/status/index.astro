@@ -5,7 +5,7 @@ import * as schema from "@/db/schema";
 import Layout from "../../layouts/Layout.astro";
 const servers = await db
   .select({ name: schema.servers.name, mark: schema.servers.mark })
-  .from(schema.servers);
+  .from(schema.servers).execut;
 ---
 
 <Layout title="Status • Team SMP">
